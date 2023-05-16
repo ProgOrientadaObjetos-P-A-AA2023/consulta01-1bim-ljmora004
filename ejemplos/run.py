@@ -1,4 +1,4 @@
-from mis_clases import Miclase, Miclase02
+from mis_clases import Miclase
 # Crear dos objetos de la clase 01
 
 # objeto 01
@@ -12,10 +12,11 @@ print(str(object02))
 
 
 # crear ingresando valores por teclado
-empresa = input("Cual es el nombre de su empresa?\n")
-salario = float(input("Cual es su salario mensual?\n"))
+nombre = input("Ingrese su nombre: ")
+apellido = input("Ingrese su apellido: ")
+edad = int(input("Ingrese su edad: "))
 
-persona = Miclase02(empresa, salario)
+persona = Miclase(nombre, apellido, edad)
 
 # Presentar objeto; usar el método __st__
 print(str(persona))
